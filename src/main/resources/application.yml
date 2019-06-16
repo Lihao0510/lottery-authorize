@@ -1,0 +1,24 @@
+spring:
+
+  application:
+    name: lottery-authorize
+
+  datasource:
+    url: jdbc:mysql://139.196.97.157:3306/lottery_dev
+    username: lihao
+    password: 55637179q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8101
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 106.12.81.74
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://139.196.97.157:8201/eureka/
+
